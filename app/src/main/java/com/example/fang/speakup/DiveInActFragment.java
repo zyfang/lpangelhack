@@ -16,22 +16,25 @@ import static com.example.fang.speakup.R.id.cameraButton;
  * A placeholder fragment containing a simple view.
  */
 public class DiveInActFragment extends Fragment {
+
     View v;
     VideoView vv;
 
     public DiveInActFragment() {
     }
 
+
+
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         v = inflater.inflate(R.layout.fragment_dive_in, container, false);
 
         vv = (VideoView) v.findViewById(R.id.diveVideoView);
-        String path = "android.recource://" + getActivity().getPackageName() + "/" + R.raw.divevid;
-        vv.setVideoURI(Uri.parse(path));
         vv.setMediaController(new MediaController(v.getContext()));
+        String path = "android.recourse://com.example.fang.speakup/" + R.raw.divevid;
+        Uri uri = Uri.parse(path);
+        vv.setVideoURI(uri);
         return v;
     }
 }

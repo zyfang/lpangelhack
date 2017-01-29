@@ -2,6 +2,7 @@ package com.example.fang.speakup;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -56,7 +57,8 @@ public class Tab2bFragmentActFragment extends Fragment {
                 }
                 else
                 {
-                    Intent detailintent = new Intent(context, DiveInAct.class);//.putExtra(Intent.EXTRA_TEXT, cur_item);
+                    Intent detailintent = new Intent(context, DiveInAct.class);
+//                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=9NhkrlcBdjw&rel=0")));
                     startActivity(detailintent);
                 }
             }
