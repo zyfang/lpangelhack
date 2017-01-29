@@ -27,4 +27,7 @@
         <item>Mercury</item>
         <item>Venus</item>
     </string-array>
+    <string name="title_activity_exercise1">Exercise1Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tab2b_fragment">Tab2bFragmentAct</string>
 </resources>

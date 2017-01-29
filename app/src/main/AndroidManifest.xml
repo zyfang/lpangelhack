@@ -2,10 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fang.speakup">
 
-    <uses-feature android:name="android.hardware.camera"
+    <uses-feature
+        android:name="android.hardware.camera"
         android:required="true" />
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,6 +22,14 @@
                 android.permission.READ_EXTERNAL_STORAGE
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Exercise1Activity"
+            android:label="@string/title_activity_exercise1"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Tab2bFragmentAct"
+            android:label="@string/title_activity_tab2b_fragment"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

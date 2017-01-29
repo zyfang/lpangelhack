@@ -14,11 +14,11 @@ import java.util.List;
  * Created by yuen on 28.01.17.
  */
 
-public class Menu1Adapter extends ArrayAdapter<RowItem> {
+public class Menu2Adapter extends ArrayAdapter<RowItem> {
 
     Context context;
 
-    public Menu1Adapter(Context context, int resourceId, //resourceId=your layout
+    public Menu2Adapter(Context context, int resourceId, //resourceId=your layout
                         List<RowItem> items) {
         super(context, resourceId, items);
         this.context = context;
@@ -36,9 +36,9 @@ public class Menu1Adapter extends ArrayAdapter<RowItem> {
         LayoutInflater mInflater = (LayoutInflater) context
                 .getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.menu1, null);
+            convertView = mInflater.inflate(R.layout.menu2, null);
             holder = new ViewHolder();
-            holder.imageView = (ImageView) convertView.findViewById(R.id.menuImages);
+            holder.imageView = (ImageView) convertView.findViewById(R.id.menu2Images);
             convertView.setTag(holder);
         } else
             holder = (ViewHolder) convertView.getTag();
