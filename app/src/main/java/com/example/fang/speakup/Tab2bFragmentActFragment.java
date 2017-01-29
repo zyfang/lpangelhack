@@ -18,9 +18,9 @@ import java.util.List;
  */
 public class Tab2bFragmentActFragment extends Fragment {
     Integer[] menuimages = {
-            R.drawable.movement,
-            R.drawable.mind,
-            R.drawable.message};
+            R.drawable.dive,
+            R.drawable.practise,
+            R.drawable.more};
 
     ListView lv;
 
@@ -30,14 +30,14 @@ public class Tab2bFragmentActFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_tab2b_fragment, container, false);
-        lv = (ListView) v.findViewById(R.id.listview_menu);
+        lv = (ListView) v.findViewById(R.id.listview_menu2);
         List<RowItem> rowItems = new ArrayList<RowItem>();
         for (int i = 0; i < menuimages.length; i++) {
             RowItem item = new RowItem(menuimages[i]);
             rowItems.add(item);
         }
 
-        ListView listView = (ListView) v.findViewById(R.id.listview_menu);
+        ListView listView = (ListView) v.findViewById(R.id.listview_menu2);
         final Menu2Adapter iadapter = new Menu2Adapter(getActivity(),
                 R.layout.menu2, rowItems);
         listView.setAdapter(iadapter);

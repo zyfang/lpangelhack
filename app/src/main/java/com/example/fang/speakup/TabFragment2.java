@@ -45,7 +45,7 @@ public class TabFragment2 extends Fragment {
                 RowItem cur_item = iadapter.getItem(position);
 
                 //serializable is in many cases too slow, should change to use parceable (see http://stackoverflow.com/questions/2139134/how-to-send-an-object-from-one-android-activity-to-another-using-intents)
-                Intent detailintent = new Intent(context, TabFragment2b.class);//.putExtra(Intent.EXTRA_TEXT, cur_item);
+                Intent detailintent = new Intent(context, Tab2bFragmentAct.class);//.putExtra(Intent.EXTRA_TEXT, cur_item);
                 startActivity(detailintent);
             }
         });
