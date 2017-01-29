@@ -17,7 +17,7 @@ import com.example.fang.speakup.R;
 import static android.R.attr.button;
 import static android.app.Activity.RESULT_OK;
 
-public class TabFragment3 extends Fragment implements View.OnClickListener{
+public class Exercise1 extends Fragment implements View.OnClickListener{
 
     View v;
     Button cameraButton;

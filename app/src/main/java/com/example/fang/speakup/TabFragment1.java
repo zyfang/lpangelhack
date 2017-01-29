@@ -17,7 +17,10 @@ public class TabFragment1 extends Fragment {
     Integer[] imagenames = {
             R.drawable.list1,
             R.drawable.list2,
-            R.drawable.list3};
+            R.drawable.list3,
+            R.drawable.list4,
+            R.drawable.list5,
+            R.drawable.list6};
 
     ListView lv;
 
